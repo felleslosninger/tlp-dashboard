@@ -1,0 +1,51 @@
+.teamCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 164px;
+  --border-width: 4px;
+}
+
+.memberImg {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+}
+
+.fullName {
+  font-size: 1.2rem;
+  margin-top: 0;
+  margin-top: -15px;
+}
+
+.role {
+  font-size: 1rem;
+  margin-top: 5px;
+  color: #9c9c9c;
+}
+
+.statusIcon {
+  position: relative;
+  bottom: 25px;
+  left: 25px;
+}
+
+.available {
+  border: var(--border-width) solid #15b851;
+}
+
+.busy {
+  border: var(--border-width) solid #ff4141;
+}
+
+.away {
+  border: var(--border-width) solid #ffa800;
+}
+
+.offline {
+  border: var(--border-width) solid #8b8b8b;
+}
+
+.outOfOffice {
+  border: var(--border-width) solid #bc00db;
+}

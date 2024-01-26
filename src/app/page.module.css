@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header h1 {
+  font-size: 1.4rem;
+  margin: 0;
+  margin-top: -4px;
+}
+
+.header img {
+  margin: auto 0;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 45% 1fr;
+  gap: 24px;
+  height: 100%;
+  width: 100%;
+}
+
+.statusAndTeamWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.pageWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  height: 100%;
+  padding: 30px;
+}
