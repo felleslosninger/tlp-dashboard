@@ -21,6 +21,7 @@ const getUserStatus = async (msId: string) => {
 
   const data = await response.text();
   const users = JSON.parse(data);
+
   const member = users.filter((user: any) => user.id === msId);
 
   return member;
