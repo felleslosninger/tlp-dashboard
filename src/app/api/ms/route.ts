@@ -1,13 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { NextResponse } from "next/server";
 import { getUserProfile } from "@/helpers/getUserProfile";
-
-interface AccessParams {
-  client_id: string;
-  client_secret: string;
-  grant_type: string;
-  scope: string;
-}
+import type { AccessParams } from "@/types/ms";
 
 async function getAccessToken() {
   const access: AccessParams = {
