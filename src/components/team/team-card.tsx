@@ -4,8 +4,8 @@ import TeamMember from "@/components/team/member/member";
 
 import styles from "./team-card.module.css";
 
-import jensImg from "../../../public/jens.jpg";
-import stureImg from "../../../public/sture.jpg";
+import jensImg from "../../../public/jens.png";
+import stureImg from "../../../public/sture.png";
 import thuneImg from "../../../public/thune.png";
 import tobiasImg from "../../../public/tobias.png";
 import knutImg from "../../../public/knut.png";
