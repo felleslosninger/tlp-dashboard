@@ -36,3 +36,7 @@ h2 {
   color: var(--grey-light-1);
   margin-bottom: 20px;
 }
+
+nextjs-portal {
+  display: none;
+}
