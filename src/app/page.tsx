@@ -8,6 +8,7 @@ import WebsiteCard from "@/components/website/website-card";
 import styles from "./page.module.css";
 
 import tlpLogo from "../../public/tlp-logo.svg";
+import Clock from "@/components/clock/Clock";
 
 export const revalidate = 60;
 
@@ -15,13 +16,16 @@ export default function Home() {
   return (
     <div className={styles.pageWrapper}>
       <header className={styles.header}>
-        <Image
-          src={tlpLogo}
-          width={52}
-          height={40}
-          alt="Picture of the author"
-        />
-        <h1>Statustavle</h1>
+        <div className={styles.headerLeft}>
+          <Image
+            src={tlpLogo}
+            width={52}
+            height={40}
+            alt="Picture of the author"
+          />
+          <h1>Statustavle</h1>
+        </div>
+        <Clock />
       </header>
       <main className={styles.main}>
         <WebsiteCard />
