@@ -168,11 +168,6 @@ const ALL_SITES: Website[] = [
     pinned: false,
   },
   {
-    name: "Felles datakatalog - API",
-    id: 12835154,
-    pinned: false,
-  },
-  {
     name: "Felles brukarhandtering",
     id: 12835147,
     pinned: false,
