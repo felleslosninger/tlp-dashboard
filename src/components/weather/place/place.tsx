@@ -12,11 +12,7 @@ type PlaceProps = {
 
 const SHOW_DAYS = 3;
 
-const Place = async ({
-  locationName,
-  long,
-  lat,
-}: PlaceProps) => {
+const Place = async ({ locationName, long, lat }: PlaceProps) => {
   const sitename = "tlp-dashboard";
   const contact = "https://www.digdir.no/";
 
@@ -118,21 +114,12 @@ function sortWeatherData(weatherData: any) {
 }
 
 function getLowHighTemperature(timeseries: any) {
-  let low = 0;
-  let high = 0;
-
-  Object.keys(timeseries).forEach((hour) => {
-    const temperature =
-      timeseries[hour][0].data.instant.details.air_temperature;
-
-    if (temperature < low) {
-      low = temperature;
-    }
-
-    if (temperature > high) {
-      high = temperature;
-    }
+  const temperatures = Object.keys(timeseries).map((hour) => {
+    return timeseries[hour][0].data.instant.details.air_temperature;
   });
+
+  const low = Math.min(...temperatures);
+  const high = Math.max(...temperatures);
 
   return { low, high };
 }
